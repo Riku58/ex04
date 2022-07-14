@@ -1,11 +1,18 @@
 import java.util.Random;
+import java.util.Scanner;
 public class HeadOrTale{
 
     public static void main(String[] args){
         Random rand = new Random();
+         Scanner sc = new Scanner(System.in);  
+         
         int num;
         int Hnum = 0;
         int Tnum = 0;
+        String name ; 
+        System.out.println("Who are you?");
+        name = sc.next();
+        System.out.println("Hello,"+name);
         System.out.println("Tossing a coin...");
         for(int i=0;i<3;i++){
             System.out.printf("Round %d: ",i+1);
