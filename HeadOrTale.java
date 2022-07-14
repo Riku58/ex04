@@ -18,6 +18,11 @@ public class HeadOrTale{
                 Tnum++;
             }
             System.out.printf("Heads: %d, Tails: %d",Hnum,Tnum);
+            if(Hnum > Tnum){
+                System.out.println( name+" win.");
+            }else{
+                System.out.println( name+" lose.");
+            }
         }
     }
 }
